@@ -1,12 +1,10 @@
 {
   "name": "information-design",
   "description": "Designing and Developing Modern Progressive Web Apps",
-  "homepage": "https://jwgravesfl.github.io",
   "version": "0.0.54",
   "dependencies": {
     "firebase": "^4.8.2",
     "firebase-tools": "^3.16.0",
-    "gh-pages": "^1.1.0",
     "re-base": "^3.2.1",
     "react": "16.0.0",
     "react-burger-menu": "2.2.3",
@@ -21,8 +19,6 @@
     "react-scripts": "1.0.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

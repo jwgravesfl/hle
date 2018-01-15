@@ -118,11 +118,11 @@ export default class Header extends Component {
          <Menu
           fixed={'top'}
           >
-            <MobileMenu styles={ styles }>
-              <a id="home" className="menu-item" href="/">Home</a>
-              <a id="resume" className="menu-item" href="/resume">Resume</a>
-              <a id="portfolio" className="menu-item" href="/portfolio">Portfolio</a>
-              <a id="contact" className="menu-item" href="/contact">Contact Me</a>
+            <MobileMenu styles={ styles } isOpen={false}>
+              <Link to='/'>Home</Link>
+              <Link to='/resume'>Resume</Link>
+              <Link to='/portfolio'>Portfolio</Link>
+              <Link to='/contact'>Contact Me</Link>
             </MobileMenu>
             <Menu.Item position='right'>
               <img src={logo} alt="Logo" />
