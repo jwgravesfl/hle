@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 
 
 var pageStyle = {
-  backgroundColor: '', 
-  minHeight: '100%'
+  backgroundColor: 'none',
+  height: "100vh",
 }
 
 var footerStyle = {
