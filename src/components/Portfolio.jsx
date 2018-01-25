@@ -50,20 +50,19 @@ const ExampleImgs = styled.div`
   position: absolute;
   bottom: 0;
   text-align: ;
-  background: rgba(192, 192, 192, 0.5);
+  background: rgba(192, 192, 192, 0.8);
 
 }
 
 .h3 {
-  font-size: 1.5vw;
-  font-family: 'Acme', sans-serif;
+  font-size: 2vw;
+  font-family: 'Roboto', sans-serif;
   padding: 1vw;
-  -webkit-text-stroke: .05vw black;
-  color: red;
+  text-align: justify;
+  color: white;
 
   @media (max-width: 768px) {
-    font-size: 3.5vw;
-    -webkit-text-stroke: .1vw black;
+    font-size: 4vw;
 
   }
 }
@@ -72,26 +71,15 @@ const ExampleImgs = styled.div`
   font-size: 3vw;
   font-family: 'Anton', sans-serif;
   padding-left: 1vw;
-  padding-bottom: 1vw;
-  -webkit-text-stroke: .5px black;
+  padding-bottom: 2vw;
+  -webkit-text-stroke: .15vw black;
   color: white;
-  text-shadow:
-      2px 2px 0 #000,
-    -.7px -.7px 0 #000,  
-      .7px -.7px 0 #000,
-      -.7px .7px 0 #000,
-      .7px .7px 0 #000;
+
 
   @media (max-width: 768px) {
     font-size: 6.0vw;
-    padding-bottom: 1vw;
-    -webkit-text-stroke: .25px black;
-    text-shadow:
-      1.px 1.px 0 #000,
-    -.25px -.25px 0 #000,  
-      .25px -.25px 0 #000,
-      -.25px .25px 0 #000,
-      .25px .25px 0 #000;
+    -webkit-text-stroke: .3vw black;
+
   }
 }
 
@@ -100,12 +88,12 @@ const ExampleImgs = styled.div`
   margin-left: 1vw;
   padding-left: 3vw;
   padding-bottom: 1vw;
-  -webkit-text-stroke: .5px black;
+  -webkit-text-stroke: .05vw black;
   color: black;
 
   @media (max-width: 768px) {
     font-size: 5vw;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: .1vw black;
 
   }
 }
@@ -138,13 +126,13 @@ return (
               <Image
                 src={id}
                 as='a'
-                href='https://jwgravesfl.surge.sh'
+                href='https://informationdesignus.surge.sh'
                 target='_blank'
               />
+              <a href='https://informationdesignus.surge.sh' target='_blank' rel="noopener noreferrer">
               <div className="overlay">
                 <div className="text">
-                    <h3 className="h3">Information Design is a full stack web app solution provider.  Concentrating on 
-                    modern design styles, Information Design offers clients an opening into Web 3.0.</h3>
+                    <h3 className="h3">Information Design is a ReactJS and Firebase full stack responsive web app.</h3>
 
                     
                       <div className="skills">Technologies</div>
@@ -191,6 +179,7 @@ return (
 
                 </div>
               </div>
+              </a>
             </div>
         </ExampleImgs>
       </Grid.Column>
@@ -207,29 +196,57 @@ return (
                 href='https://jwgravesfl.github.io/tms-webapp/'
                 target='_blank'
               />
+              <a href='https://jwgravesfl.github.io/tms-webapp/' target='_blank' rel="noopener noreferrer">
               <div className="overlay">
                 <div className="text">
-                    <h3 className="h3">The Mad Scientist Entertainment is a live music entertainment company.   
-                    device, cowboydr.com offers a detailed glimpse into the band Cowboy Drive.</h3>
+                    <h3 className="h3">The Mad Scientist Entertainment is a ReactJS web app utilizing GatsbyJS.</h3>
 
-                    <h2 className="h2" >
-                      <div className="skills">Skills</div>
-                        <div className="devIcons"><i class="devicon-html5-plain" ></i>&nbsp;&nbsp;
+                    
+                      <div className="skills">Technologies</div>
+                        <div className="devIcons">
+                        <Popup
+                        trigger={<i class="devicon-photoshop-plain colored"></i>}
+                            content='Adobe Photoshop'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-chrome-plain colored"></i>}
+                            content='Chrome Dev Tools'
+                        />&nbsp;&nbsp;
                         <Popup
                         trigger={<i class="devicon-github-plain colored"></i>}
-                            content='Github'
-                        />
-                        <i class="devicon-css3-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-bootstrap-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-github-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-illustrator-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-javascript-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-jquery-plain"></i>
-                        </div>
-                    </h2>
+                            content='Github version control'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-visualstudio-plain colored"></i>}
+                            content='Visual Studio'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-html5-plain colored"></i>}
+                            content='HTML5'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-css3-plain colored"></i>}
+                            content='CSS'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-javascript-plain colored"></i>}
+                            content='JavaScript'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-react-plain colored"></i>}
+                            content='ReactJS Frontend'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-nodejs-plain colored"></i>}
+                            content='NodeJS Web App Framework'
+                        />&nbsp;&nbsp;
+                      </div>
+
+                
 
                 </div>
               </div>
+              </a>
             </div>
         </ExampleImgs>
         
@@ -250,25 +267,57 @@ return (
                 href='https://www.cowboydr.com'
                 target='_blank'
               />
+              <a href='https://www.cowboydr.com' target='_blank' rel="noopener noreferrer">
               <div className="overlay">
                 <div className="text">
-                    <h3 className="h3">Cowboy Drive is a music entertainment digital press kit.  Used as a marketing  
-                    device, cowboydr.com offers a detailed glimpse into the band Cowboy Drive.</h3>
+                    <h3 className="h3">Cowboydr.com is a static Live Band responsive press kit web app.</h3>
 
-                    <h2 className="h2" >
-                      <div className="skills">Skills</div>
-                        <div className="devIcons"><i class="devicon-html5-plain" ></i>&nbsp;&nbsp;
-                        <i class="devicon-css3-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-bootstrap-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-github-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-illustrator-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-javascript-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-jquery-plain"></i>
-                        </div>
-                    </h2>
+                    
+                      <div className="skills">Technologies</div>
+                        <div className="devIcons">
+                        <Popup
+                        trigger={<i class="devicon-photoshop-plain colored"></i>}
+                            content='Adobe CC'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-chrome-plain colored"></i>}
+                            content='Chrome Dev Tools'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-github-plain colored"></i>}
+                            content='Github version control'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-visualstudio-plain colored"></i>}
+                            content='Visual Studio'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-html5-plain colored"></i>}
+                            content='HTML5'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-css3-plain colored"></i>}
+                            content='CSS3'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-javascript-plain colored"></i>}
+                            content='JavaScript'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-jquery-plain colored"></i>}
+                            content='JQuery Frontend'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-php-plain colored"></i>}
+                            content='PhP Backend'
+                        />&nbsp;&nbsp;
+                      </div>
+
+                
 
                 </div>
               </div>
+              </a>
             </div>
         </ExampleImgs>
         
@@ -284,28 +333,60 @@ return (
               <Image
                 src={bsb}
                 as='a'
-                href='https://jwgravesfl.surge.sh'
+                href='https://informationdesignus.surge.sh'
                 target='_blank'
               />
+              <a href='https://informationdesignus.surge.sh' target='_blank' rel="noopener noreferrer">
               <div className="overlay">
                 <div className="text">
-                    <h3 className="h3">Information Design is a full stack web app solution provider.  Concentrating on 
-                    modern design styles, Information Design offers clients an opening into Web 3.0.</h3>
+                    <h3 className="h3">Writer and Style guru for Brainstrom Brewery web blog.</h3>
 
-                    <h2 className="h2" >
-                      <div className="skills">Skills</div>
-                        <div className="devIcons"><i class="devicon-html5-plain" ></i>&nbsp;&nbsp;
-                        <i class="devicon-css3-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-bootstrap-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-github-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-illustrator-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-javascript-plain"></i>&nbsp;&nbsp;
-                        <i class="devicon-jquery-plain"></i>
-                        </div>
-                    </h2>
+                    
+                      <div className="skills">Technologies</div>
+                        <div className="devIcons">
+                        <Popup
+                        trigger={<i class="devicon-illustrator-plain colored"></i>}
+                            content='Adobe Illustrator'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-photoshop-plain colored"></i>}
+                            content='Adobe Photoshop'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-wordpress-plain colored"></i>}
+                            content='WordPress'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-chrome-plain colored"></i>}
+                            content='Chrome Dev Tools'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-github-plain colored"></i>}
+                            content='Github version control'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-visualstudio-plain colored"></i>}
+                            content='Visual Studio'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-html5-plain colored"></i>}
+                            content='HTML5'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-css3-plain colored"></i>}
+                            content='CSS'
+                        />&nbsp;&nbsp;
+                        <Popup
+                        trigger={<i class="devicon-javascript-plain colored"></i>}
+                            content='JavaScript'
+                        />&nbsp;&nbsp;
+                      </div>
+
+                
 
                 </div>
               </div>
+              </a>
             </div>
         </ExampleImgs>
         

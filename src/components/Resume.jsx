@@ -9,7 +9,8 @@ var sectionStyle = {
     color: 'white',
     backgroundColor: 'none',
     paddingTop: '3em',
-    paddingBottom: '2em'
+    paddingBottom: '2em',
+    height: '60vh'
 };
 
 export default class Resume extends Component {
@@ -23,7 +24,6 @@ export default class Resume extends Component {
           centered 
           as='a' 
           href={resumePdf}
-          size='large'
           target='_blank'
            />
       </div>
