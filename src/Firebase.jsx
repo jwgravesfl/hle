@@ -2,12 +2,12 @@
 import firebase from 'firebase'
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyDFjIqmF3bp4IUYLvvkXKkZIYBrpxBXySQ",
-    authDomain: "contactform-8db42.firebaseapp.com",
-    databaseURL: "https://contactform-8db42.firebaseio.com",
-    projectId: "contactform-8db42",
-    storageBucket: "contactform-8db42.appspot.com",
-    messagingSenderId: "440563244508"
+    apiKey: "AIzaSyDn1WdXuXnGatq5A7uu3qTVZ6tX_tMtDX4",
+    authDomain: "leathernlaceus.firebaseapp.com",
+    databaseURL: "https://leathernlaceus.firebaseio.com",
+    projectId: "leathernlaceus",
+    storageBucket: "leathernlaceus.appspot.com",
+    messagingSenderId: "501919823905"
   };
 firebase.initializeApp(config);
 

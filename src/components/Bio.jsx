@@ -13,7 +13,7 @@ var sectionStyle = {
     height: '60vh'
 };
 
-export default class Resume extends Component {
+export default class Bio extends Component {
   render() {
     return (
       <div style={ sectionStyle }>

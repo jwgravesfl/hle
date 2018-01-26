@@ -150,7 +150,7 @@ componentDidMount() {
                   textAlign='center'
                   style = {nameInfoCardStyle}
                   >
-                  J. Graves
+                  Leather & Lace
                 </Card.Header>
                 <Divider horizontal>***</Divider>
                 <Card.Description style = {descriptionInfoCardStyle}>
@@ -163,15 +163,13 @@ componentDidMount() {
                   textAlign='center'
                 >
                 <Card.Description>
-                 &nbsp;&nbsp;
+            
                 </Card.Description>
                   <Popup
-                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jwgravesfl/">LinkedIn&nbsp;&nbsp;<Icon name='linkedin' style={ iconStyle } /></a>}
-                      content='J. Graves LinkedIn'
+                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LnLTampa/">Facebook&nbsp;&nbsp;<Icon name='Facebook' style={ iconStyle } /></a>}
                   />&nbsp;&nbsp;
                   <Popup
-                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://github.com/jwgravesfl"><Icon name='github' style={ iconStyle } />&nbsp;&nbsp; Github</a>}
-                      content='J. Graves Github'
+                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://youtube.com/leathernlaceus"><Icon name='youtube' style={ iconStyle } />&nbsp;&nbsp; Youtube</a>}
                   />&nbsp;&nbsp;
                 </Card.Content
                 >
@@ -188,7 +186,7 @@ componentDidMount() {
                   color='red'
                 >
                 <Card.Header style={ cardHeaderStyle }>
-                  Contact J. Graves
+                  Contact Leather & Lace
                 </Card.Header>
                 <Form id=''>
                   <Form.Field>
@@ -250,13 +248,13 @@ componentDidMount() {
                 {hasBeenClicked && (
                  <div> 
                   <div>
-                    Thank You for contacting me.
+                    Thank You for contacting Leather & Lace.
                   </div>
                   <div>
-                    I will get back to use as soon as poosible.
+                    I will get back to you as soon as poosible.
                   </div>
                   <div>
-                    Please check out my <Link to='/portfolio'>Portfolio Showcase</Link>!
+                    Listen to some tunes from <Link to='/portfolio'>the Showcase</Link>!
                   </div>
                  </div>
                 )}

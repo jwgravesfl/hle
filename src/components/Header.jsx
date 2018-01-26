@@ -71,7 +71,7 @@ export default class Header extends Component {
       style={menuStyle}>
 
         <Menu.Item>
-           <img src={logo} alt="Logo" />
+           LnL
         </Menu.Item>
         <Menu.Menu
           position='right'
@@ -86,20 +86,20 @@ export default class Header extends Component {
         </Menu.Item>
 
         <Menu.Item
-          name='resume'
-          active={activeItem === 'resume'}
+          name='bio'
+          active={activeItem === 'bio'}
           onClick={this.handleItemClick}
           style={menuItemStyle}
         >
-          <Link to='/resume'>Resume</Link>
+          <Link to='/bio'>Bio</Link>
         </Menu.Item>
         <Menu.Item
-          name='portfolio'
-          active={activeItem === 'portfolio'}
+          name='showcase'
+          active={activeItem === 'showcase'}
           onClick={this.handleItemClick}
           style={menuItemStyle}
         >
-          <Link to='/portfolio'>Portfolio</Link>
+          <Link to='/showcase'>Showcase</Link>
         </Menu.Item>
         <Menu.Item
           name='contact'
@@ -120,12 +120,12 @@ export default class Header extends Component {
           >
             <MobileMenu styles={ styles } isOpen={false}>
               <Link to='/'>Home</Link>
-              <Link to='/resume'>Resume</Link>
-              <Link to='/portfolio'>Portfolio</Link>
+              <Link to='/bio'>Bio</Link>
+              <Link to='/showcase'>Showcase</Link>
               <Link to='/contact'>Contact Me</Link>
             </MobileMenu>
             <Menu.Item position='right'>
-              <img src={logo} alt="Logo" />
+              LnL
             </Menu.Item>
         </Menu>
         </Responsive>

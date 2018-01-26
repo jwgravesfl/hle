@@ -18,11 +18,11 @@ const Home = () => (
 
     <div style={ containerStyle }>
     <div>
-    Portfolio Showcase of J. Graves
+    Live Band Digital Press Kit for:
     </div>
 
     <div>
-    Full Stack Web Design and Web Development
+    Leather & Lace 
     </div>
     </div>
 

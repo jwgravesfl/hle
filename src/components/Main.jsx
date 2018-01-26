@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
-import Resume from './Resume'
-import Portfolio from './Portfolio'
+import Bio from './Bio'
+import Showcase from './Showcase'
 import Contact from './Contact'
 import ThankYou from './ThankYou'
 
@@ -20,8 +20,8 @@ const Main = () => (
   <main style={mainStyle}>
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route path='/resume' component={Resume} />
-      <Route path='/portfolio' component={Portfolio} />
+      <Route path='/bio' component={Bio} />
+      <Route path='/showcase' component={Showcase} />
       <Route path='/contact' component={Contact} />
       <Route path='/thankyou' component={ThankYou} />
     </Switch>
