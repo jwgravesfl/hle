@@ -1,31 +1,49 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
-var containerStyle = {
-    backgroundColor: 'white',
-    width: '100%',
-    textAlign: 'center',
-    left: '0',
-    position: 'fixed',
-    bottom: '0',
-    height: '50px',
-    fontFamily: 'Roboto, sans-serif',
-    textTransform: 'uppercase',
-    fontWeight: 'bold',
-    fontSize: '12px' 
+const MainDiv = styled.div`
+.container {
+  padding-top: 1vh;
+  text-align: center;
+  background-color: none;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;  
 }
 
-const Home = () => (
+.footerLeft {
+  float: left;
+}
 
-    <div style={ containerStyle }>
-    <div>
-    Live Band Digital Press Kit for:
-    </div>
+.footerRight {
+  float: right;
+}
 
-    <div>
-    Leather & Lace 
-    </div>
-    </div>
 
-)
+`;
 
-export default Home
+
+
+export default class Footer extends Component {
+  state = {}
+
+  render() {
+    
+    return (
+      
+      <MainDiv>
+        <div className="container">
+          <span className="footerLeft">
+            Left
+          </span>
+          <span className="footerRight">
+            Right
+          </span>
+        </div>
+      </MainDiv>
+
+    )
+  }
+}

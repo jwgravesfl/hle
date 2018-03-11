@@ -6,9 +6,6 @@ const MainDiv = styled.div`
   padding-top: 5em;
   text-align: center;
 }
-
-
-
 `;
 
 

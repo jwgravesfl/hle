@@ -5,11 +5,20 @@ import Bio from './Bio'
 import Showcase from './Showcase'
 import Contact from './Contact'
 import ThankYou from './ThankYou'
+import styled from 'styled-components' 
+import img from '../assets/heatherRedMic.jpg';
 
-var mainStyle = {
-  textAlign: "",
-  minHeight: '100%'
-  };
+
+
+  const MainDiv = styled.div`
+    .container {
+      height: 100vh;
+      background-image: url(${img});
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+    }
+`;
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -17,7 +26,8 @@ var mainStyle = {
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
 const Main = () => (
-  <main style={mainStyle}>
+  <MainDiv>
+  <main className="container">
     <Switch>
       <Route exact path='/' component={Home} />
       <Route path='/bio' component={Bio} />
@@ -26,6 +36,7 @@ const Main = () => (
       <Route path='/thankyou' component={ThankYou} />
     </Switch>
   </main>
+  </MainDiv>
 )
 
 export default Main

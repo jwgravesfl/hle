@@ -1,20 +1,40 @@
-import React from 'react'
-import HomeName from './HomeName'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
-const homeStyle = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
-  width: '100%',
-  minHeight: '100%',
-  backgroundColor: '',
-  paddingTop: '4em',
-  paddingBottom: '60px'
-};
 
-const Home = () => (
-  <div style={homeStyle}>
-    <HomeName />
-  </div>
-)
+const MainDiv = styled.div`
+.container {
+  padding-top: 1vh;
+  text-align: center;
+  background-color: yellow;
+  width: 100%
+  height: 100%;
 
-export default Home
+}
+
+`;
+
+
+
+export default class Home extends Component {
+  state = {}
+
+  render() {
+    
+    return (
+      
+      <MainDiv>
+        <div className="container">
+          <span className="">
+          Left
+          </span>
+          <span className="">
+            Right
+          </span>
+        </div>
+      </MainDiv>
+
+    )
+  }
+}
