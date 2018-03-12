@@ -35,14 +35,14 @@ const MainDiv = styled.div`
 .openModal {
   position: absolute;
   top: 2vh;
-  right: 1vw;
+  right: 2vw;
 
 }
 
 .closeModal {
   position: absolute;
   top: 2vh;
-  right: 1vw;
+  right: 2vw;
   z-index: 9999;
 }
 

@@ -6,7 +6,7 @@ import MenuModal from './MenuModal'
 
 const HeaderDiv = styled.div`
 .headerContainer {
-  padding-top: 1vh;
+  padding-top: 0;
   text-align: ;
   background-color: none;
   height: 5vh;
@@ -18,8 +18,12 @@ const HeaderDiv = styled.div`
 
 .headerLogo {
   float: left;
-  padding-top: 0;
-  padding-left: 3em;
+  padding-top: 2vh;
+  padding-left: 2vw;
+
+  img {
+    width: 15vh;
+  }
 }
 
 .hamburgerMenu {
@@ -40,7 +44,7 @@ export default class Header extends Component {
       <HeaderDiv>
         <div className="headerContainer">
           <span className="headerLogo">
-          <Link to='/'><img src={logo} width="45" height="45" alt="HLE Logo"/></Link>
+          <Link to='/'><img src={logo} alt="HLE Logo"/></Link>
           </span>
           <span className="hamburgerMenu">
             <MenuModal />
