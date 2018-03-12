@@ -35,7 +35,7 @@ var containerGridColumn2Style = {
 
 var cardHeaderStyle = {
   textAlign: 'center',
-  fontSize: '36px',
+  fontSize: '32px',
   fontFamily: 'Anton, sans-serif',
   fontVariant: "small-caps"
 }
@@ -47,7 +47,7 @@ var iconStyle = {
 }
 
 var nameInfoCardStyle = {
-  fontSize: '36px',
+  fontSize: '24px',
   fontFamily: 'Anton, sans-serif',
   fontVariant: "small-caps", 
   color: 'black'
@@ -150,14 +150,14 @@ componentDidMount() {
                   textAlign='center'
                   style = {nameInfoCardStyle}
                   >
-                  Leather & Lace
+                  Heather Love Entertainment
                 </Card.Header>
                 <Divider horizontal>***</Divider>
                 <Card.Description style = {descriptionInfoCardStyle}>
-                  Phone: 813 720-0783
+                  Phone: 813 454-4495
                 </Card.Description>
                 <Card.Description style = {descriptionInfoCardStyle}>
-                  email: jwgravesfl@gmail.com
+                  email: heatherloveentertainment@gmail.com
                 </Card.Description>
                 <Card.Content
                   textAlign='center'
@@ -166,10 +166,10 @@ componentDidMount() {
             
                 </Card.Description>
                   <Popup
-                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LnLTampa/">Facebook&nbsp;&nbsp;<Icon name='Facebook' style={ iconStyle } /></a>}
+                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/heatherloveentertainment/">Facebook&nbsp;&nbsp;<Icon name='Facebook' style={ iconStyle } /></a>}
                   />&nbsp;&nbsp;
                   <Popup
-                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://youtube.com/leathernlaceus"><Icon name='youtube' style={ iconStyle } />&nbsp;&nbsp; Youtube</a>}
+                      trigger={<a target="_blank" rel="noopener noreferrer" href="https://youtube.com/heatherloveentertainment"><Icon name='youtube' style={ iconStyle } />&nbsp;&nbsp; Youtube</a>}
                   />&nbsp;&nbsp;
                 </Card.Content
                 >
@@ -186,7 +186,7 @@ componentDidMount() {
                   color='red'
                 >
                 <Card.Header style={ cardHeaderStyle }>
-                  Contact Leather & Lace
+                  Contact Heather Love Entertainment
                 </Card.Header>
                 <Form id=''>
                   <Form.Field>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import Main from './components/Main';
 import 'semantic-ui-css/semantic.min.css';
 import { BrowserRouter } from 'react-router-dom';
@@ -21,8 +21,9 @@ var footerStyle = {
 
 const App = () => (
   <div style={pageStyle}>
-    <Header />
+    
     <Main />
+    <Header />
     <Footer style={ footerStyle }/>
 
   </div>

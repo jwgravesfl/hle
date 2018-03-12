@@ -6,16 +6,13 @@ import Showcase from './Showcase'
 import Contact from './Contact'
 import ThankYou from './ThankYou'
 import styled from 'styled-components' 
-import img from '../assets/heatherRedMic.jpg';
 
 
 
   const MainDiv = styled.div`
     .container {
       height: 100vh;
-      background-image: url(${img});
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      
 
     }
 `;

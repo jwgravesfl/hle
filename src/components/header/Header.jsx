@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../assets/hleSmallLogo.png'
+import logo from '../../assets/hleSmallLogo.png'
+import MenuModal from './MenuModal'
 
-const MainDiv = styled.div`
-.container {
+const HeaderDiv = styled.div`
+.headerContainer {
   padding-top: 1vh;
-  text-align: center;
+  text-align: ;
   background-color: none;
   height: 5vh;
+  width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
 }
 
 .headerLogo {
@@ -21,7 +23,6 @@ const MainDiv = styled.div`
 }
 
 .hamburgerMenu {
-  float: right;
 }
 
 
@@ -36,16 +37,16 @@ export default class Header extends Component {
     
     return (
       
-      <MainDiv>
-        <div className="container">
+      <HeaderDiv>
+        <div className="headerContainer">
           <span className="headerLogo">
-          <Link to='/'><img src={logo} width="45 " height="45" /></Link>
+          <Link to='/'><img src={logo} width="45" height="45" alt="HLE Logo"/></Link>
           </span>
           <span className="hamburgerMenu">
-            Right
+            <MenuModal />
           </span>
-        </div>
-      </MainDiv>
+          </div>
+      </HeaderDiv>
 
     )
   }
