@@ -18,11 +18,11 @@ const HeaderDiv = styled.div`
 
 .headerLogo {
   float: left;
-  padding-top: 2vh;
+  padding-top: .5vh;
   padding-left: 2vw;
 
   img {
-    width: 15vh;
+    width: 14vh;
   }
 }
 

@@ -29,16 +29,27 @@ const MainDiv = styled.div`
       float: left;
       height: 25vh;
       width: 25vw;
-      background-color: purple;
+      background-color: ;
     }
 
     .module1 {
       float: left;
-      height: 25vh;
+      height: ;
       width: 25vw;
       background-color: ;
-    }
 
+      .module1a {
+        height: 15vh;
+      }
+
+      .module1b {
+        height: 10vh;
+        text-align: center;
+        font-size: 3vh;
+        background-color: ;
+        padding-top: 7vh;
+      }
+    }
   }
 
   .buttonDiv {
@@ -81,7 +92,47 @@ const MainDiv = styled.div`
     box-shadow: 0 0 0 4px white, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
   }
 
-
+  .card {
+    width: 24vw;
+    height: 50vh;
+    float: left;
+    perspective: 500px;
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    line-height: 24vh;
+    color: #03446A;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+  }
   
 `;
 
@@ -96,29 +147,96 @@ export default class Bio extends Component {
       
       <MainDiv>
         <div className="homeContainer">
-        <div class="grid">
-          <div class="module1"></div>
-          <div class="module">2</div>
-          <div class="module">3</div>
-          <div class="module">4</div>
-          <div class="module">5</div>
-          <div class="module">6</div>
-          <div class="module">7</div>
-          <div class="module">8</div>
-          <div class="module">9</div>
-          <div class="module">10</div>
-          <div class="module">11</div>
-          <div class="module">12</div>
-          <div class="module">13</div>
-          <div class="module">14</div>
-          <div class="module">15</div>
-          <div class="module">16</div>
-        </div>
-        <div className="buttonDiv">
-          <Link to='/showcase'><button className="button">Continue the Tour</button></Link>
-        </div>
+          <div className="grid">
+            <div className="module1">
+              <div className="module1a">
+                1a
+              </div>
+              <div className="module1b">
+                Live Music
+              </div>
+            </div>
+            <div className="module1">
+             <div className="module1a">
+                1a
+              </div>
+              <div className="module1b">
+                Open Mic
+              </div>
+            </div>
+            <div className="module1">
+              <div className="module1a">
+                1a
+              </div>
+              <div className="module1b">
+                DJ Services
+              </div>
+            </div>
+            <div className="module1">
+              <div className="module1a">
+                1a
+              </div>
+              <div className="module1b">
+                Karaoke
+              </div>
+            </div>
+            <div className="module">
+              <div className="serviceCard">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      Live Music
+                    </div>
+                    <div class="back">
+                      Back!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="module"> <div className="serviceCard">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      Open Mics
+                    </div>
+                    <div class="back">
+                      Back!
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+            <div className="module"> <div className="serviceCard">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      DJ Services
+                    </div>
+                    <div class="back">
+                      Back!
+                    </div>
+                  </div>
+                </div>
+              </div></div>
+            <div className="module"> <div className="serviceCard">
+                <div class="card">
+                  <div class="content">
+                    <div class="front">
+                      Karaoke
+                    </div>
+                    <div class="back">
+                      Back!
+                    </div>
+                  </div>
+                </div>
+              </div></div>
 
-        </div>
+          </div>
+          <div className="buttonDiv">
+            <Link to='/showcase'><button className="button">Continue the Tour</button></Link>
+          </div>
+          </div>
+        
       </MainDiv>
 
     )
