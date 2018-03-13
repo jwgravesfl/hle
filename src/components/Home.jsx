@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import {Grid} from 'semantic-ui-react'
 
 import img from '../assets/heatherRedMic.png'
 import imgMobile from '../assets/heatherRedMicMobile.png'
@@ -16,7 +15,6 @@ const MainDiv = styled.div`
   width: 100%
   height: 100%;
 
-  animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: 100% 100%;
