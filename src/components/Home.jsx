@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-import img from '../assets/heatherRedMic.png'
+import img from '../assets/heatherRedMic.jpg'
 import imgMobile from '../assets/heatherRedMicMobile.png'
 
 import imgLongLogo from '../assets/hleLongLogo.png'
