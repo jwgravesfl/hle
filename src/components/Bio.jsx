@@ -7,9 +7,13 @@ import styled from 'styled-components'
 import imgOpenMic from '../assets/openMic.jpg'
 import imgKaraoke from '../assets/karaoke.jpg'
 import imgLive from '../assets/live.jpg'
+import imgDJ from '../assets/dJ.jpg'
 
 import Live from './bio/Live'
 import OpenMic from './bio/OpenMic'
+import Karaoke from './bio/Karaoke'
+import DJ from './bio/Dj'
+import Back from './bio/Back'
 
 const MainDiv = styled.div`
 .homeContainer {
@@ -27,6 +31,13 @@ const MainDiv = styled.div`
       height: 25vh;
       width: 25vw;
       background-color: ;
+
+      @media only screen and (max-width: 600px) {
+        width: 99vw;
+        height: 50vh;
+      }
+
+
     }
     .module1 {
       float: left;
@@ -35,22 +46,26 @@ const MainDiv = styled.div`
       background-color: ;
       .module1a {
         height: 15vh;
+
+        @media only screen and (max-width: 600px) {
+          height: 8vh;
+        }
       }
       .module1b {
         height: 2vh;
         text-align: center;
         font-size: 3vh;
         background-color: ;
-        padding-top: 7vh;
       }
     }
   }
   .buttonDiv {
     width: ;
     padding-top: 10vh;
-    position: absolute;
+    position: fixed;
     bottom: 5vh;
     right: 5vw;
+    
     @media only screen and (max-width: 600px) {
       padding-right: 0;
     }
@@ -69,6 +84,7 @@ const MainDiv = styled.div`
     box-shadow: 0 0 0 4px black, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
     text-shadow: -1px -1px #aa3030;
     font-weight: normal;
+
     @media only screen and (max-width: 600px) {
       width: 50vw;
       font-size: 5vw;
@@ -86,6 +102,12 @@ const MainDiv = styled.div`
     height: 50vh;
     float: left;
     perspective: 500px;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
+
   }
   
   .contentBio {
@@ -118,6 +140,11 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
   }
 
   .backBio {
@@ -135,6 +162,12 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
+
   }
   
   .backBio {
@@ -158,6 +191,11 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
   }
 
   .backBioOpenMic {
@@ -175,6 +213,12 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
+
   }
   
   .backBioOpenMic {
@@ -198,6 +242,11 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
   }
 
   .backBioKaraoke {
@@ -215,6 +264,11 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
   }
   
   .backBioKaraoke {
@@ -238,6 +292,11 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
   }
 
   .backBioLive {
@@ -255,9 +314,64 @@ const MainDiv = styled.div`
     background-size: 100% 100%;
     width: 24vw;
     height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
   }
   
   .backBioLive {
+    background: ;
+    color: ;
+    transform: rotateY( 180deg );
+  }
+
+  .frontBio {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: ;
+    color: ;
+    text-align: center;
+    font-size: 5vh;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background-image: url(${imgDJ});
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 24vw;
+    height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
+  }
+
+  .backBio {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: ;
+    text-align: center;
+    font-size: 5vh;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 24vw;
+    height: 50vh;
+
+    @media only screen and (max-width: 600px) {
+      width: 99vw;
+      height: 50vh;
+    }
+  }
+  
+  .backBio {
     background: ;
     color: ;
     transform: rotateY( 180deg );
@@ -311,51 +425,51 @@ export default class Bio extends Component {
               </div>
             </div>
             <div className="module">
-              <div className="serviceCard">
-                <div className="cardBio">
+              
+                <div className="cardBio" onClick="">
                   <div className="contentBio">
                     <div className="frontBioLive">
                       <Live />
                     </div>
                     <div className="backBioLive">
-                      backBio!
+                    <Back />
                     </div>
                   </div>
                 </div>
-              </div>
+              
             </div>
             <div className="module"> <div className="serviceCardOpenMic">
-                <div className="cardBio">
+                <div className="cardBio" onClick="">
                   <div className="contentBio">
                     <div className="frontBioOpenMic">
                       <OpenMic />
                     </div>
                     <div className="backBioOpenMic">
-                      backBio!
+                    <Back />
                     </div>
                   </div>
                 </div>
               </div></div>
             <div className="module"> <div className="serviceCard">
-                <div className="cardBio">
+                <div className="cardBio" onClick="">
                   <div className="contentBio">
                     <div className="frontBio">
-                      frontBio
+                      <DJ />
                     </div>
                     <div className="backBio">
-                      backBio!
+                    <Back />
                     </div>
                   </div>
                 </div>
               </div></div>
             <div className="module"> <div className="serviceCard">
-                <div className="cardBio">
+                <div className="cardBio" onClick="">
                   <div className="contentBio">
                     <div className="frontBioKaraoke">
-                      Karaoke
+                      <Karaoke />
                     </div>
                     <div className="backBioKaraoke">
-                      backBio!
+                      <Back />
                     </div>
                   </div>
                 </div>
@@ -363,7 +477,7 @@ export default class Bio extends Component {
 
           </div>
           <div className="buttonDiv">
-            <Link to='/showcase'><button className="button">Continue the Tour</button></Link>
+            <Link to='/contact'><button className="button">Book HLE</button></Link>
           </div>
           </div>
         

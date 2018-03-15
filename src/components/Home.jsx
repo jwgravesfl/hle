@@ -83,7 +83,7 @@ const MainDiv = styled.div`
     }
  }
   
-  .button:hover {
+  .button:hover  {
     background: white;
     color: red;
     border: 2px dashed black;
